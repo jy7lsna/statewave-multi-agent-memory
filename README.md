@@ -1,4 +1,4 @@
-![Banner](./docs/images/banner.jpeg)
+p ![Banner](./docs/images/banner.jpeg)
 
 # Multi-Agent Memory with Statewave
 
@@ -93,10 +93,11 @@ Every agent follows the same three-step loop:
 
 Three concurrent agents share a single Statewave subject. The FastAPI server orchestrates the agents and pushes live updates to the browser via SSE. Statewave runs as a separate local service.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/system-archetiecture-flow.png">
-  <img alt="Multi-Agent Memory architecture" src="docs/images/system-archetiecture-flow.png" width="100%">
-</picture>
+![Multi-Agent Memory architecture](docs/images/system-archetiecture-flow.png)
+
+Demo interface during a full multi-agent run:
+
+![Multi-Agent Memory demo interface](docs/images/demo-ss.png)
 
 ---
 
@@ -186,7 +187,7 @@ Open [http://localhost:8000](http://localhost:8000) and click **Run pipeline**.
 1. Click **Run pipeline**. Three agent panels appear and begin logging in real time.
 2. Watch the Memory panel as each agent commits its findings. When TechCrunch's memory lands, the Bloomberg Stripe entry is immediately struck through in red.
 3. The status bar updates to **"1 conflict resolved"** once compilation finishes.
-4. Type a question in the chat input, e.g. _"What is Stripe's current processing fee?"_  and the synthesis agent answers using active memories only.
+4. Type a question in the chat input, e.g. _"What is Stripe's current processing fee?"_ and the synthesis agent answers using active memories only.
 5. Click **Reset** to clear the subject and run again.
 
 ---
