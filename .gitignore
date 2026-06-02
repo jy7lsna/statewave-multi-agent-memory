@@ -1,0 +1,12 @@
+.env
+.venv/
+.venv313/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+node_modules/
+inspector/node_modules/
+CLAUDE.md
+AGENTS.md
+.claude/
